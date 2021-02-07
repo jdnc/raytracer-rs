@@ -5,6 +5,7 @@ fn gen_ppm(width: u64, height: u64) {
     print!("P3\n{} {}\n255\n", width, height);
 
     for j in (1..height + 1).rev() {
+        eprintln!("Scan lines remaining: {}", j);
         for i in 0..width {
             let red = (i as f64) / ((width - 1) as f64);
             let green = (j as f64) / ((height - 1) as f64);
