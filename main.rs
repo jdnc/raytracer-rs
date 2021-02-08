@@ -1,4 +1,5 @@
 mod vec3;
+mod ray;
 
 type Point = vec3::Vec3;
 type Color = vec3::Vec3;
