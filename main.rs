@@ -1,3 +1,7 @@
+mod vec3;
+
+type Point = vec3::Vec3;
+type Color = vec3::Vec3;
 
 // generate ppm image
 fn gen_ppm(width: u64, height: u64) {
